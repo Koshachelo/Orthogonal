@@ -1,0 +1,512 @@
+}
+DDDDm=cbind(DDDm,DDm)
+optFederov(~quad(.),DDDm,nTrials=16,crit = "D",eval=TRUE)
+library("agricolae", lib.loc="~/R/win-library/3.4")
+trt<-c(3,2) # factorial 3x2
+outdesign <-design.ab(trt, r=3, serie=2)
+book12 <- outdesign$book
+head(book12) # print of the field book
+trt<-c(3,2,4,4) # factorial 3x2
+outdesign <-design.ab(trt, r=3, serie=2)
+book12 <- outdesign$book
+head(book12) # print of the field book
+dat<-gen.factorial(c(3,3,2,2,2,2),factors=1:2)
+detach("package:agricolae", unload=TRUE)
+library("AlgDesign", lib.loc="~/R/win-library/3.4")
+dat<-gen.factorial(c(3,3,2,2,2,2),factors=1:2)
+dat<-gen.factorial(c(3,3,2,2,2,2),factors=1:2)
+View(dat)
+View(dat)
+desFM<-optFederov(˜.ˆ2,dat,nTrials=40)
+desFM[1:4]
+desFM<-optFederov(˜.ˆ2,dat,nTrials=40)
+desFM<-optFederov('.'2,dat,nTrials=40)
+desFM<-optFederov('.',2,dat,nTrials=40)
+desFM<-optFederov(`.`,2,dat,nTrials=40)
+desFM<-optFederov(~.,2,dat,nTrials=40)
+desFM<-optFederov(~.,dat,nTrials=40)
+desFM[1:4]
+desFM<-optFederov(~.~2,dat,nTrials=40)
+desFM<-optFederov(~. ~2,dat,nTrials=40)
+desFM<-optFederov(~2,dat,nTrials=40)
+dat<-gen.factorial(c(3,3,4,4,4,4,6,6),factors=1:3)
+View(dat)
+oa.design(nfactors=c(6,3), nlevels=c(3,4)
+dd=oa.design(nfactors=c(6,3), nlevels=c(3,4)
+dd<-oa.design(nfactors=c(6,3), nlevels=c(3,4)
+dd<-oa.design(nfactors=3, nlevels=c(3,4)
+oa.design(nfactors=3, nlevels=c(3,4)
+oa.design(nlevels=c(4,3,3,2))
+install.packages("DoE.base")
+library("DoE.base", lib.loc="~/R/win-library/3.4")
+oa.design(nfactors=3, nlevels=c(3,4)
+plan=oa.design(nfactors=3, nlevels=c(3,4)
+plan = oa.design(nfactors=3, nlevels=c(3,4)
+library("DoE.base", lib.loc="~/R/win-library/3.4")
+plan = oa.design(nfactors=3, nlevels=c(3,4)
+dat<-gen.factorial(c(3,3,4,4,4,4,6,6),factors=1:3)
+desFM<-optFederov(,dat,nTrials=40)
+desFM[1:4]
+dat<-gen.factorial(c(3,3,4,4,4,4,6,6),factors=1:3)
+desFM<-optFederov(~.,dat,nTrials=40)
+desFM[1:4]
+library("AlgDesign", lib.loc="~/R/win-library/3.4")
+dat<-gen.factorial(c(3,3,4,4,4,4,6,6),factors=1:3)
+desFM<-optFederov(~.,dat,nTrials=40)
+desFM<-optFederov(~.,dat,nTrials=40)
+desFM[1:4]
+desFM
+dd=desFM[5]
+dd=data.frame(desFM[5])
+View(dd)
+View(dd)
+dat<-gen.factorial(c(5,5),factors=1:2)
+View(dat)
+dat<-gen.factorial(c(5,5),factors=1:5)
+View(dat)
+dat<-gen.factorial(c(5,5,5,5,5),factors=1:5)
+View(dat)
+desFM<-optFederov(~.,dat)
+dd=data.frame(desFM[5])
+View(dd)
+dat<-gen.factorial(c(3,3),factors=1:2)
+desFM<-optFederov(~.,dat)
+dd=data.frame(desFM[5])
+View(dat)
+dat<-gen.factorial(c(3,3))
+dat<-gen.factorial(c(3,3))
+View(dat)
+dat<-gen.factorial(c(3,3,3),factors=1:3)
+View(dat)
+desFM<-optFederov(~.,dat)
+dd=data.frame(desFM[5])
+View(dd)
+dat<-gen.factorial(c(3,3,3),factors=1)
+desFM<-optFederov(~.,dat)
+dd=data.frame(desFM[5])
+View(dat)
+dat<-gen.factorial(c(3,3,3))
+desFM<-optFederov(~.,dat)
+dd=data.frame(desFM[5])
+View(dat)
+dat<-gen.factorial(c(3,3,3,4,4,2,2,2))
+View(dat)
+desFM<-optFederov(~.,dat)
+dd=data.frame(desFM[5])
+View(dd)
+View(dd)
+View(dat)
+dat<-gen.factorial(c(3,3,3,4,4))
+desFM<-optFederov(~.,dat)
+dd=data.frame(desFM[5])
+View(dd)
+View(dat)
+View(dat)
+View(dd)
+optMonteCarlo(~.,dat)
+dat<-gen.factorial(c(3,3,3))
+desFM<-optFederov(~.,dat)
+dd=data.frame(desFM[5])
+optMonteCarlo(~.,dat)
+optBlock(~.,dat)
+View(dat)
+optBlock(~.,dat,c(9,9,9))
+da=optBlock(~.,dat,c(9,9,9))
+optBlock(~.,dat,c(3,3,3))
+mtrx=data.frame(cc[6])
+cc<-optBlock(~.,dat,c(3,3,3))
+mtrx=data.frame(cc[6])
+View(mtrx)
+mtrx=data.frame(cc[4])
+View(mtrx)
+t(mtrx)%*%mtrx
+det(t(mtrx)%*%mtrx)^(1/4)/(4)
+library("agricolae", lib.loc="~/R/win-library/3.4")
+t(mtrx)%*%mtrx
+det(t(mtrx)%*%mtrx)^(1/4)/(4)
+View(mtrx)
+det(t(mtrx)%*%mtrx)^(1/4)/(4)
+mtrx=matrix(cc[4])
+det(t(mtrx)%*%mtrx)^(1/4)/(4)
+View(mtrx)
+mtrx=matrix(cc[4],3,3)
+det(t(mtrx)%*%mtrx)^(1/4)/(4)
+View(mtrx)
+mtrx=as.matrix(cc[4])
+det(t(mtrx)%*%mtrx)^(1/4)/(4)
+View(mtrx)
+mtrx=as.matrix(cc[4])
+View(mtrx)
+cc<-optBlock(~.,dat,c(3,3,3))
+mtrx=as.matrix(cc[4])
+mtrx=as.matrix(cc[4,])
+mtrx=as.matrix(cc[4], nrow = 3, ncol = 3)
+View(mtrx)
+dat<-gen.factorial(c(3,3,3))
+desFM<-optFederov(~.,dat)
+dd=data.frame(desFM[5])
+cc<-optBlock(~.,dat,c(3,3,3))
+mtrx=as.matrix(cc[4], nrow = 3, ncol = 3)
+det(t(mtrx)%*%mtrx)^(1/4)/(4)
+View(mtrx)
+df=cc[4]
+mtrx=as.matrix(data.frame(cc[4]))
+det(t(mtrx)%*%mtrx)^(1/4)/(4)
+View(dd)
+det(t(mtrx)%*%mtrx)^(1/3)/(3)
+n=1
+m=6
+d1=matrix(0:(m-1),nrow = 1, ncol = m)
+d2=matrix(0:(m-1),nrow = m, ncol = 1)
+Dm=(d1%x%d2)%%m
+for(i in 0:(n-1))
+{
+temp=(((i+Dm))%%n)+1
+if(i==0)
+DDm=temp
+else
+DDm=rbind(DDm,temp)
+}
+for(i in 0:(n-1))
+{
+temp2=matrix(0:(m-1),nrow=m,ncol=1)
+temp2=temp2+1
+if(i==0)
+DDDm=temp2
+else
+DDDm=rbind(DDDm,temp2)
+}
+DDDDm=cbind(DDDm,DDm)
+DS=DDDDm[order(DDDDm[,1]),]
+DSS=DS[,1:5]
+DDS=DSS
+DDS[DDS==1]<-(-1)
+DDS[DDS==2]<-(-0.5)
+DDS[DDS==3]<-(0)
+DDS[DDS==4]<-(0.5)
+DDS[DDS==5]<-(1)
+#optFederov(~.,DDS,nTrials=(n*m),crit = "D")
+det(t(DDS)%*%DDS)^(1/m)/(n*m)
+n=1
+m=6
+d1=matrix(0:(m-1),nrow = 1, ncol = m)
+d2=matrix(0:(m-1),nrow = m, ncol = 1)
+Dm=(d1%x%d2)%%m
+for(i in 0:(n-1))
+{
+temp=(((i+Dm))%%n)+1
+if(i==0)
+DDm=temp
+else
+DDm=rbind(DDm,temp)
+}
+for(i in 0:(n-1))
+{
+temp2=matrix(0:(m-1),nrow=m,ncol=1)
+temp2=temp2+1
+if(i==0)
+DDDm=temp2
+else
+DDDm=rbind(DDDm,temp2)
+}
+DDDDm=cbind(DDDm,DDm)
+DS=DDDDm[order(DDDDm[,1]),]
+DSS=DS[,1:5]
+DDS=DSS
+DDS[DDS==1]<-(-1)
+DDS[DDS==2]<-(-0.5)
+DDS[DDS==3]<-(0)
+DDS[DDS==4]<-(0.5)
+DDS[DDS==5]<-(1)
+#optFederov(~.,DDS,nTrials=(n*m),crit = "D")
+det(t(DDS)%*%DDS)^(1/m)/(n*m)
+View(DSS)
+View(DDS)
+View(DDDDm)
+n=6
+m=1
+d1=matrix(0:(m-1),nrow = 1, ncol = m)
+d2=matrix(0:(m-1),nrow = m, ncol = 1)
+Dm=(d1%x%d2)%%m
+for(i in 0:(n-1))
+{
+temp=(((i+Dm))%%n)+1
+if(i==0)
+DDm=temp
+else
+DDm=rbind(DDm,temp)
+}
+for(i in 0:(n-1))
+{
+temp2=matrix(0:(m-1),nrow=m,ncol=1)
+temp2=temp2+1
+if(i==0)
+DDDm=temp2
+else
+DDDm=rbind(DDDm,temp2)
+}
+DDDDm=cbind(DDDm,DDm)
+DS=DDDDm[order(DDDDm[,1]),]
+DSS=DS[,1:5]
+DDS=DSS
+DDS[DDS==1]<-(-1)
+DDS[DDS==2]<-(-0.5)
+DDS[DDS==3]<-(0)
+DDS[DDS==4]<-(0.5)
+DDS[DDS==5]<-(1)
+#optFederov(~.,DDS,nTrials=(n*m),crit = "D")
+det(t(DDS)%*%DDS)^(1/m)/(n*m)
+View(DDDDm)
+n=3
+m=6
+d1=matrix(0:(m-1),nrow = 1, ncol = m)
+d2=matrix(0:(m-1),nrow = m, ncol = 1)
+Dm=(d1%x%d2)%%m
+for(i in 0:(n-1))
+{
+temp=(((i+Dm))%%n)+1
+if(i==0)
+DDm=temp
+else
+DDm=rbind(DDm,temp)
+}
+for(i in 0:(n-1))
+{
+temp2=matrix(0:(m-1),nrow=m,ncol=1)
+temp2=temp2+1
+if(i==0)
+DDDm=temp2
+else
+DDDm=rbind(DDDm,temp2)
+}
+DDDDm=cbind(DDDm,DDm)
+DS=DDDDm[order(DDDDm[,1]),]
+DSS=DS[,1:5]
+DDS=DSS
+DDS[DDS==1]<-(-1)
+DDS[DDS==2]<-(-0.5)
+DDS[DDS==3]<-(0)
+DDS[DDS==4]<-(0.5)
+DDS[DDS==5]<-(1)
+#optFederov(~.,DDS,nTrials=(n*m),crit = "D")
+det(t(DDS)%*%DDS)^(1/m)/(n*m)
+dat<-gen.factorial(c(3,3,3))
+desFM<-optFederov(~.,dat)
+dd=data.frame(desFM[5])
+cc<-optBlock(~.,dat,c(3,3,3))
+mtrx=as.matrix(data.frame(cc[4]))
+det(t(mtrx)%*%mtrx)^(1/3)/(3*3)
+library("agricolae", lib.loc="~/R/win-library/3.4")
+library("AlgDesign", lib.loc="~/R/win-library/3.4")
+dat<-gen.factorial(c(3,3,3))
+desFM<-optFederov(~.,dat)
+dd=data.frame(desFM[5])
+cc<-optBlock(~.,dat,c(3,3,3))
+mtrx=as.matrix(data.frame(cc[4]))
+det(t(mtrx)%*%mtrx)^(1/3)/(3*3)
+View(dd)
+dat<-gen.factorial(c(4,4,4))
+desFM<-optFederov(~.,dat)
+dd=data.frame(desFM[5])
+cc<-optBlock(~.,dat,c(4,4,4))
+mtrx=as.matrix(data.frame(cc[4]))
+det(t(mtrx)%*%mtrx)^(1/3)/(3*3)
+det(t(mtrx)%*%mtrx)^(1/4)/(4*4)
+dat<-gen.factorial(c(3,3,3))
+desFM<-optFederov(~.,dat)
+dd=data.frame(desFM[5])
+cc<-optBlock(~.,dat,c(3,3,3))
+mtrx=as.matrix(data.frame(cc[4]))
+det(t(mtrx)%*%mtrx)^(3/3)/(3*3)
+det(t(mtrx)%*%mtrx)^(1/3)/(3*3)
+det(t(mtrx)%*%mtrx)^(1/4)/(4*4)
+dat<-gen.factorial(c(4,4,4,4))
+desFM<-optFederov(~.,dat)
+dd=data.frame(desFM[5])
+cc<-optBlock(~.,dat,c(4,4,4,4))
+mtrx=as.matrix(data.frame(cc[4]))
+det(t(mtrx)%*%mtrx)^(1/4)/(4*4)
+View(dat)
+View(dd)
+cc<-optBlock(~.,dat,c(4,4,4,4))
+mtrx=as.matrix(data.frame(cc[4]))
+det(t(mtrx)%*%mtrx)^(1/4)/(4*4)
+dat<-gen.factorial(c(4,4,4))
+desFM<-optFederov(~.,dat)
+dd=data.frame(desFM[5])
+cc<-optBlock(~.,dat,c(4,4,4))
+mtrx=as.matrix(data.frame(cc[4]))
+det(t(mtrx)%*%mtrx)^(1/4)/(4*3)
+dat<-gen.factorial(c(4,4,4))
+desFM<-optFederov(~.,dat)
+dd=data.frame(desFM[5])
+cc<-optBlock(~.,dat,c(4,4,4))
+mtrx=as.matrix(data.frame(cc[4]))
+det(t(mtrx)%*%mtrx)^(1/3)/(4*3)
+dat<-gen.factorial(c(3,3,3))
+desFM<-optFederov(~.,dat)
+dd=data.frame(desFM[5])
+cc<-optBlock(~.,dat,c(3,3,3))
+mtrx=as.matrix(data.frame(cc[4]))
+det(t(mtrx)%*%mtrx)^(1/3)/(3*3)
+dat<-gen.factorial(c(3,3,3,5,5))
+desFM<-optFederov(~.,dat)
+dd=data.frame(desFM[5])
+cc<-optBlock(~.,dat,c(3,3,3,5,5))
+mtrx=as.matrix(data.frame(cc[4]))
+View(dd)
+cc<-optFederov(~.,dat,eval=TRUE)
+View(dd)
+mtrx=as.matrix(data.frame(cc[4]))
+View(mtrx)
+dat<-gen.factorial(c(5,5,5,5,5))
+desFM<-optFederov(~.,dat)
+dd=data.frame(desFM[5])
+library("AlgDesign", lib.loc="~/R/win-library/3.4")
+library("agricolae", lib.loc="~/R/win-library/3.4")
+dat<-gen.factorial(c(5,5,5,5,5))
+desFM<-optFederov(~.,dat)
+dd=data.frame(desFM[5])
+desFM<-optFederov(~.,dat)
+dd=data.frame(desFM[5])
+View(dd)
+dat<-gen.factorial(c(5,5,5,5,5))
+desFM<-optFederov(~.,dat)
+dd=data.frame(desFM[5])
+cc<-optBlock(~.,dat,c(5,5,5,5,5))
+mtrx=as.matrix(data.frame(cc[4]))
+det(t(mtrx)%*%mtrx)^(1/5)/(5*5)
+library("AlgDesign", lib.loc="~/R/win-library/3.4")
+library("agricolae", lib.loc="~/R/win-library/3.4")
+dat<-gen.factorial(c(5,5,5,5,5))
+desFM<-optFederov(~.,dat)
+dd=data.frame(desFM[5])
+cc<-optBlock(~.,dat,c(5,5,5,5,5))
+mtrx=as.matrix(data.frame(cc[4]))
+det(t(mtrx)%*%mtrx)^(1/5)/(5*5)
+dat<-gen.factorial(c(3,3,3))
+desFM<-optFederov(~.,dat)
+dd=data.frame(desFM[5])
+cc<-optBlock(~.,dat,c(3,3,3))
+mtrx=as.matrix(data.frame(cc[4]))
+det(t(mtrx)%*%mtrx)^(1/3)/(3*3)
+View(dd)
+library("AlgDesign", lib.loc="~/R/win-library/3.4")
+dat<-gen.factorial(c(3,3,3,5,5))
+desFM<-optFederov(~.,dat,nTrials=30)
+dd=data.frame(desFM[5])
+View(dd)
+desFM<-optFederov(~.,dat,nTrials=100)
+dd=data.frame(desFM[5])
+View(dd)
+View(dd)
+dat<-gen.factorial(c(3,3,3,5,5))
+desFM<-optFederov(~.,dat,nTrials=150)
+dd=data.frame(desFM[5])
+dat<-gen.factorial(c(3,3,3,5,5))
+desFM<-optFederov(~.,dat,nTrials=200)
+dd=data.frame(desFM[5])
+dat<-gen.factorial(c(3,3,3,5,5))
+desFM<-optFederov(~.,dat,nTrials=300)
+dd=data.frame(desFM[5])
+desFM<-optFederov(~.,dat,nTrials=330)
+desFM<-optFederov(~.,dat,nTrials=400)
+desFM<-optFederov(~.,dat,nTrials=25)
+View(dd)
+dd=data.frame(desFM[5])
+View(dd)
+desFM<-optFederov(~.,dat)
+dd=data.frame(desFM[5])
+View(dd)
+View(mtrx)
+View(dd)
+desFM<-optFederov(~.,dat,nTrials=9)
+dd=data.frame(desFM[5])
+View(dd)
+desFM<-optFederov(~.,dat)
+desFM<-optFederov(~.,dat,nTrials=25)
+dd=data.frame(desFM[5])
+View(dd)
+n=3
+m=6
+d1=matrix(0:(m-1),nrow = 1, ncol = m)
+View(d1)
+d2=matrix(0:(m-1),nrow = m, ncol = 1)
+Dm=(d1%x%d2)%%m
+View(Dm)
+View(Dm)
+for(i in 0:(n-1))
+{
+temp=(((i+Dm))%%n)+1
+if(i==0)
+DDm=temp
+else
+DDm=rbind(DDm,temp)
+}
+View(Dm)
+View(DDm)
+for(i in 0:(n-1))
+{
+temp2=matrix(0:(m-1),nrow=m,ncol=1)
+temp2=temp2+1
+if(i==0)
+DDDm=temp2
+else
+DDDm=rbind(DDDm,temp2)
+}
+View(DDDm)
+View(DDm)
+DDDDm=cbind(DDDm,DDm)
+DS=DDDDm[order(DDDDm[,1]),]
+DSS=DS[,1:5]
+View(DSS)
+shiny::runApp('orthogonal/orthogonal')
+runApp('orthogonal/orthogonal')
+runApp('orthogonal/orthogonal')
+View(calculateDesign)
+n=5
+m=5
+d1=matrix(0:(m-1),nrow = 1, ncol = m)
+d2=matrix(0:(m-1),nrow = m, ncol = 1)
+Dm=(d1%x%d2)%%m
+for(i in 0:(n-1))
+{
+temp=(((i+Dm))%%n)+1
+if(i==0)
+DDm=temp
+else
+DDm=rbind(DDm,temp)
+}
+for(i in 0:(n-1))
+{
+temp2=matrix(0:(m-1),nrow=m,ncol=1)
+temp2=temp2+1
+if(i==0)
+DDDm=temp2
+else
+DDDm=rbind(DDDm,temp2)
+}
+DDDDm=cbind(DDDm,DDm)
+DS=DDDDm[order(DDDDm[,1]),]
+DSS=DS[,1:5]
+DDS=DSS
+DDS[DDS==1]<-(-1)
+DDS[DDS==2]<-(-0.5)
+DDS[DDS==3]<-(0)
+DDS[DDS==4]<-(0.5)
+DDS[DDS==5]<-(1)
+#optFederov(~.,DDS,nTrials=(n*m),crit = "D")
+Deff=det(t(DDS)%*%DDS)^(1/m)/(n*m)
+runApp('orthogonal/orthogonal')
+runApp('orthogonal/orthogonal')
+shiny::runApp('orthogonal/orthogonal')
+runApp('orthogonal/orthogonal')
+runApp('orthogonal/orthogonal')
+runApp('orthogonal/orthogonal')
+runApp('orthogonal/orthogonal')
+runApp('orthogonal/orthogonal')
+runApp('orthogonal/orthogonal')
+runApp('orthogonal/orthogonal')
+runApp('orthogonal/orthogonal')
+runApp('orthogonal/orthogonal')
+runApp('orthogonal/orthogonal')

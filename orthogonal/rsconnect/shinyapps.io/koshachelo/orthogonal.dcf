@@ -1,0 +1,12 @@
+name: orthogonal
+title: orthogonal
+username:
+account: koshachelo
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 228643
+bundleId: 1229660
+url: https://koshachelo.shinyapps.io/orthogonal/
+when: 1519037130.66486
+asMultiple: FALSE
+asStatic: FALSE
